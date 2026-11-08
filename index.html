@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achadinhos da Amanda</title>
+    <style>
+        /* CONFIGURAÇÃO DE CORES */
+        :root {
+            --fundo-pagina: #fff0f5; /* Rosa pastel bem suave */
+            --cor-texto: #4a4a4a;
+            --fundo-botao: #ffffff;
+            --hover-botao: #ffe4e1;
+            --fundo-vip: #d4edda; /* Verde chamativo para o WhatsApp */
+            --hover-vip: #c3e6cb;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--fundo-pagina);
+            color: var(--cor-texto);
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 400px; /* Mantém formato de celular mesmo no PC */
+            padding: 40px 20px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .foto-perfil {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #fff;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 1.4rem;
+            color: #333;
+        }
+
+        p.bio {
+            font-size: 0.95rem;
+            color: #666;
+            margin-top: 8px;
+            margin-bottom: 30px;
+        }
+
+        /* ESTILO PADRÃO DOS BOTÕES */
+        .botao {
+            display: block;
+            width: 100%;
+            padding: 16px;
+            margin-bottom: 15px;
+            background-color: var(--fundo-botao);
+            color: #333;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 500;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            transition: all 0.2s ease;
+            box-sizing: border-box;
+        }
+
+        .botao:hover {
+            background-color: var(--hover-botao);
+            transform: translateY(-2px);
+        }
+
+        /* ESTILO DO BOTÃO VIP (Destaque) */
+        .botao.vip {
+            background-color: var(--fundo-vip);
+            color: #155724;
+            font-weight: 600;
+            border: 1px solid #c3e6cb;
+        }
+
+        .botao.vip:hover {
+            background-color: var(--hover-vip);
+        }
+
+        .emoji {
+            margin-right: 8px;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- COLOQUE O LINK DA FOTO DA AMANDA AQUI EM 'src' -->
+        <img src="https://via.placeholder.com/150" alt="Foto da Amanda" class="foto-perfil">
+        
+        <h1>@amandacecilia98</h1>
+        <p class="bio">As melhores promoções da internet testadas e curadas para você! 👇</p>
+
+        <!-- TROQUE O # PELOS LINKS DE AFILIADO/GRUPO -->
+        <a href="#" class="botao vip">
+            <span class="emoji">🟢</span> Entre no Grupo VIP de Ofertas
+        </a>
+
+        <a href="#" class="botao">
+            <span class="emoji">✨</span> Organizador de Cozinha (Último Vídeo)
+        </a>
+
+        <a href="#" class="botao">
+            <span class="emoji">👶</span> Essenciais do Enxoval da Manu
+        </a>
+
+        <a href="#" class="botao">
+            <span class="emoji">🏠</span> Achadinhos p/ Casa Inteligente
+        </a>
+
+        <a href="#" class="botao">
+            <span class="emoji">🛒</span> Minha Vitrine na Amazon
+        </a>
+    </div>
+</body>
+</html>
